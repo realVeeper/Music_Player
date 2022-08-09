@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopify Music</title>
+
+    <link rel="stylesheet" href="./buttons/css/all.min.css" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <div class="app-wrapper">
+        <div class="player">
+            <audio  id="music-player">
+            </audio>
+           
+            <div class="song-details">
+                <h2 id="song-title">Lucid Dreams</h2>
+                <h3 id="song-artist">Juice WRLD</h3>
+            </div>
+            <div class="player-controls">
+                <button id="prev-btn" class="skip-btn  "><i class="fas fa-backward fa-lg"></i></button>
+                <button id="play-btn" class="play"><i id="play-icon" class="fas fa-play fa-2x"></i></button>
+                <button id="next-btn" class="skip-btn skip-back "><i class="fas fa-forward fa-lg"></i></button>
+            </div>
+            
+            <div class="next-up">
+                <p id="para">Next up: <span id="song-next-up"></span></p>
+               
+            </div><br>
+
+            <div id="progress-area">
+                <div id="progress-bar"></div>
+                <div class="song-timer">
+                  <span id="current-time">0:00</span>
+                  <span id="max-duration">0:00</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
